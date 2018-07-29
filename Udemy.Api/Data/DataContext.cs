@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using udemy.Models;
+using Udemy.Api.Models;
 
-namespace udemy.Data
+namespace Udemy.Api.Data
 {
     public class DataContext : DbContext
     {
@@ -9,6 +9,7 @@ namespace udemy.Data
         public DataContext(DbContextOptions<DataContext> options): base(options){}
 
         public DbSet<Value> Values {get;set;}
+        public DbSet<User> Users {get;set;}
         
     }
 }

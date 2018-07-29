@@ -1,4 +1,4 @@
-namespace udemy.Models
+namespace Udemy.Api.Models
 {
     public class Value
     {
